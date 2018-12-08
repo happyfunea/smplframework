@@ -42,20 +42,20 @@ def __banner__():
        [+]\033[1;37m---AgoOeng---\033[34m[+]
     \033[33m---\033[1;37mCodedName:[@9un9]\033[33m---
    \033[34m-[+]\033[1;37mThanks To: JaxBCD\033[34m[+]-
- \033[0m+════════════════════════+
-  \033[1;32m[=]-1.\033[34mTag/Source Link Web
-  \033[1;32m[=]-2.\033[34mAuto Commentar fb
-  \033[1;32m[=]-3.\033[34mGenerate Access Token
-  \033[1;32m[=]-4.\033[34mProfile Guard
-  \033[1;32m[=]-5.\033[34mChecker Proxy
-  \033[1;32m[=]-6.\033[34mDns Checker
-  \033[1;32m[=]-7.\033[34mGet Http Headers
-  \033[1;32m[=]-8.\033[34mReverse Ip Lookup
-  \033[1;32m[=]-9.\033[34mTCP Port Scan
-  \033[1;32m[=]-10.\033[34mWhois Lookup
-  \033[1;32m[=]-11.\033[34mExit Tools
-  \033[1;32m[=]-12.\033[34mDeleting Token
-  \033[1;32m[=]-13.\033[34mAbout Tools
+ \033[0m+══════════════════════════+
+  \033[1;32m-×-[1.\033[34mTag/Source Link Web]
+  \033[1;32m-=-[2.\033[34mAuto Commentar fb]
+  \033[1;32m-=-[3.\033[34mGenerate Access Token]
+  \033[1;32m-=-[4.\033[34mProfile Guard]
+  \033[1;32m-=-[5.\033[34mChecker Proxy]
+  \033[1;32m-=-[6.\033[34mDns Checker]
+  \033[1;32m-=-[7.\033[34mGet Http Headers]
+  \033[1;32m-=-[8.\033[34mReverse Ip Lookup]
+  \033[1;32m-=-[9.\033[34mTCP Port Scan]
+  \033[1;32m-=-[10.\033[34mWhois Lookup]
+  \033[1;32m-=-[11.\033[34mExit Tools]
+  \033[1;32m-=-[12.\033[34mDeleting Token]
+  \033[1;32m-×-[13.\033[34mAbout Tools]
  \033[0m+============================+'''
 
 def help():
