@@ -3,6 +3,7 @@
 #TEAM CRABS
 #TEAM BLACK-HOLE-SECURITY
 #TEAM 407 Authentic Exploit
+sys.path.insert(0, '/data/data/com.termux/files/home/smplframework/Module')
 from ModuleGw import *
 from __init__prox import *
 from scrapDnsCek import *
