@@ -2,7 +2,7 @@
 Smplframework v.1.0
 
 # Step Install
-$pkg install python2 -y \n
+$pkg install python2 -y <br>
 $pkg install git -y
 $git clone https://github.com/happyfunea/smplframework
 $pip2 install mechanize
