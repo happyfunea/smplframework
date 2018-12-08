@@ -9,5 +9,5 @@ $pip2 install mechanize
 $pip2 install requests
 $pip2 install bs4
 $cd smplframework
-$python2 smplframework.p
+$python2 smplframework.py
 # :)
