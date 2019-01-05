@@ -182,14 +182,14 @@ while True:
     				try:
     					self.id = raw_input(R+'[*]'+B+' Masukkan Token Mu'+N+': ')
     					self.fck = open(self.id, 'r').read()
-					self.idfb = get('https://graph.facebook.com/me?access_token='+self.fck)
+					self.idfb = requests.get('https://graph.facebook.com/me?access_token='+self.fck)
 					
     				except:
     					print R+'File Not Found'
     					sys.exit()
-    				self.us = self.idfb['id']
+    				self.us = json.loads(self.idfb)
     				try:
-    					self.url =  """ curl "https://graph.facebook.com/graphql" -H 'Authorization: OAuth %s' --data 'variables={"0":{"is_shielded":true,"actor_id":"%s","client_mutation_id":"b0316dd6-3fd6-4beb-aed4-bb29c5dc64b0"}}&doc_id=1477043292367183' """ %(self.fck, self.us)
+    					self.url =  """ curl "https://graph.facebook.com/graphql" -H 'Authorization: OAuth %s' --data 'variables={"0":{"is_shielded":true,"actor_id":"%s","client_mutation_id":"b0316dd6-3fd6-4beb-aed4-bb29c5dc64b0"}}&doc_id=1477043292367183' """ %(self.fck,self.us['id'])''
     					self.catat = open('guard.sh', 'w')
     					self.catat.write(self.url)
     					self.catat.close()
