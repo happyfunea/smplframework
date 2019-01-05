@@ -76,8 +76,6 @@ def lol():
 		sys.stdout.write(G+'\r{}% Loading'.format(c))
 		sys.stdout.flush()
 a.call('clear', shell=True)
-lol()
-print '\n[✓] Loading Successfully'
 write('''\033[31m[===]Gmail:p4n1ky4(et)gmail(dot)com[===]
 \033[31m[===]Github:github.com/fappyfunea[===]\n''')
 
@@ -184,10 +182,12 @@ while True:
     				try:
     					self.id = raw_input(R+'[*]'+B+' Masukkan Token Mu'+N+': ')
     					self.fck = open(self.id, 'r').read()
+					self.idfb = get('https://graph.facebook.com/me?access_token='+self.fck)
+					
     				except:
     					print R+'File Not Found'
     					sys.exit()
-    				self.us = raw_input(B+'ID'+N+': ')
+    				self.us = self.idfb['id']
     				try:
     					self.url =  """ curl "https://graph.facebook.com/graphql" -H 'Authorization: OAuth %s' --data 'variables={"0":{"is_shielded":true,"actor_id":"%s","client_mutation_id":"b0316dd6-3fd6-4beb-aed4-bb29c5dc64b0"}}&doc_id=1477043292367183' """ %(self.fck, self.us)
     					self.catat = open('guard.sh', 'w')
