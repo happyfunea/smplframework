@@ -182,7 +182,7 @@ while True:
     				try:
     					self.id = raw_input(R+'[*]'+B+' Masukkan Token Mu'+N+': ')
     					self.fck = open(self.id, 'r').read()
-					self.idfb = requests.get('https://graph.facebook.com/me?access_token='+self.fck)
+					self.idfb = requests.get('https://graph.facebook.com/me?access_token='+self.fck).text
 					
     				except:
     					print R+'File Not Found'
